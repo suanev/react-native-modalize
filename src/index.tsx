@@ -563,7 +563,7 @@ const ModalizeBase = (
 
       if (alwaysOpen) {
         Animated.timing(overlay, {
-          toValue: 1,
+          toValue: Number(destSnapPoint <= 0),
           duration: timing.duration,
           easing: Easing.ease,
           useNativeDriver: USE_NATIVE_DRIVER,
