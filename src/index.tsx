@@ -265,7 +265,7 @@ const ModalizeBase = (
 
     Animated.parallel([
       Animated.timing(overlay, {
-        toValue: alwaysOpenValue && dest === 'default' ? 0 : 1,
+        toValue:  1,
         duration: timing.duration,
         easing: Easing.ease,
         useNativeDriver: USE_NATIVE_DRIVER,
