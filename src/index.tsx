@@ -265,7 +265,7 @@ const ModalizeBase = (
 
     Animated.parallel([
       Animated.timing(overlay, {
-        toValue:  1,
+        toValue: 1,
         duration: timing.duration,
         easing: Easing.ease,
         useNativeDriver: USE_NATIVE_DRIVER,
@@ -563,7 +563,7 @@ const ModalizeBase = (
 
       if (alwaysOpen) {
         Animated.timing(overlay, {
-          toValue: Number(destSnapPoint <= 0),
+          toValue: 1,
           duration: timing.duration,
           easing: Easing.ease,
           useNativeDriver: USE_NATIVE_DRIVER,
